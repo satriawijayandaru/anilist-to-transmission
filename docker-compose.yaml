@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  nyaa-sync:
+    build: .
+    container_name: nyaa-sync
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+     # Creates a "data" folder locally to persist your download history
+     - ./data:/app/data

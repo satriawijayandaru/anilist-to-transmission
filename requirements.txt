@@ -1,0 +1,5 @@
+requests
+feedparser
+transmission-rpc
+python-dotenv
+schedule
